@@ -1,0 +1,293 @@
+$background: #191c2f;
+
+body {
+  background-color: $background;
+}
+
+.wallets-list {
+  background-color: #24293d;
+  width: 95%;
+  height: 6%;
+  position: absolute;
+  bottom: 93%;
+  left: 2%;
+}
+
+.wallets-list-text {
+  font-family: 'Roboto', sans-serif;
+  color: #c8d5d3;
+  position: absolute;
+  bottom: 25%;
+  left: 3%;
+}
+
+.add-wallet-button {
+  background: url(../styles/icons/plus.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 18%;
+  left: 90%;
+}
+
+.add-wallet-button:hover {
+  background: url(../styles/icons/hover/plusHover.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.transactions {
+  background: url(../styles/icons/transactions.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 2%;
+  left: 3%;
+}
+
+.transactions:hover {
+  background: url(../styles/icons/hover/transHover.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.sendMoney {
+  background: url(../styles/icons/send.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 2%;
+  left: 24%;
+}
+
+.sendMoney:hover {
+  background: url(../styles/icons/hover/sendHover.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.wallets {
+  background: url(../styles/icons/wallets.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 2%;
+  left: 44%;
+}
+
+.wallets:hover {
+  background: url(../styles/icons/hover/walletsHover.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.receiveMoney {
+  background: url(../styles/icons/receive.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 2%;
+  left: 64%;
+}
+
+.receiveMoney:hover {
+  background: url(../styles/icons/hover/getHover.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.apps {
+  background: url(../styles/icons/apps-1.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 2%;
+  left: 85%;
+}
+
+.apps:hover {
+  background: url(../styles/icons/hover/appsHover.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+//modal window
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  .modal-main {
+    display: block;
+    width: 80%;
+    height: 30%;
+    position: fixed;
+    background-color: $background;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-title {
+    margin: 0 0;
+    font-family: 'Roboto', sans-serif;
+    color: #c8d5d3;
+    position: absolute;
+    left: 35%;
+    top: 3%;
+  }
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+//modal window content
+
+.tdl-input {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  border: 0;
+  color: #c8d5d3;
+  border-bottom: 1px solid rgba(#c8d5d3, 0.5);
+  background-color: $background;
+  text-align: center;
+}
+
+.tdl-input:focus {
+  text-align: center;
+  outline: 0;
+  border-bottom: 1px solid rgba(#5765d7, 0.7);
+}
+
+.tdl-input:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+.tdl-input::placeholder {
+  text-align: center;
+  color: #c8d5d3;
+}
+
+
+
+.input-radio {
+  margin-top: 20%;
+  margin-left: 15%;
+}
+
+.radio-label {
+  font-family: 'Roboto', sans-serif;
+  color: #c8d5d3;
+}
+
+button {
+  cursor: pointer;
+}
+
+.Ethereum {
+  display: inline-block;
+  background: url(../styles/icons/ethLogo.svg) no-repeat;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 13px;
+  top: 15%;
+}
+
+.Byteball {
+  display: inline-block;
+  background: url(../styles/icons/bballLogo.svg) no-repeat;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 5px;
+  top: 15%;
+}
+
+.state-wallets {
+  width: 95%;
+  height: 80%;
+  background-color: $background;
+  overflow: auto;
+  position: absolute;
+  bottom: 12%;
+  left: 2%;
+}
+
+.state-wallets::-webkit-scrollbar {
+  width: 6px;
+}
+
+.state-wallets::-webkit-scrollbar-thumb {
+  border-width: 0.7px 0.7px 0.7px 1.4px;
+  border-color: #191c2f;
+  background-color: #24293d;
+}
+
+.state-wallets::-webkit-scrollbar-track {
+  border-width: 0;
+}
+
+.state-wallets::-webkit-scrollbar-track:hover {
+  border-left: solid 1px #24293d;
+  background-color: #191c2f;
+}
+
+.state-wallets::-webkit-scrollbar-track {
+  border-width: 0;
+}
+
+.wallets-list-body {
+  margin-top: 3%;
+  background-color: #24293d;
+  width: 100%;
+  height: 14%;
+  display: block;
+  position: relative;
+}
+
+.wallets-list-body-name {
+  font-family: 'Roboto', sans-serif;
+  color: #c8d5d3;
+  position: absolute;
+  left: 15%;
+  top: 5px;
+}
+
+.wallets-list-body-balance {
+  font-family: 'Roboto', sans-serif;
+  color: #c8d5d3;
+  position: absolute;
+  left: 15%;
+  top: 40px;
+}
+
+.button-submit {
+  color: #191c2f;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .35em 1.5em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.1s;
+  position: absolute;
+  left: 40%;
+  top: 80%;
+}
+
+.button-submit:hover {
+  background: #5765d7;
+}
+
